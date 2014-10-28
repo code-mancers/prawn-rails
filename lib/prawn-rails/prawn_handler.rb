@@ -3,7 +3,7 @@ module PrawnRails
     
     def self.call(template)
       require 'prawn-rails/prawn_rails_helper'
-      ::Prawn::Document.extensions<<PrawnRailsHelper
+      ::Prawn::Document.extensions << PrawnRailsHelper
       self.new.call(template)
     end
     

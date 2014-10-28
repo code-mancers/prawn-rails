@@ -31,6 +31,17 @@ For more documentation go to [the manual](http://prawn.majesticseacreature.com/m
 * *html_strip(html)*
 Removes the html tags from a string	 
 
+### Default configuration
+
+Add a `prawn-rails.rb` config to your Rails app under `config/initializers` like this
+
+    PrawnRails.config do |config|
+      config.page_layout = :landscape
+      config.page_size   = "A4"
+    end
+
+by default page_layout is portrait and page_size is "A4"  
+
 ## Examples
  
 1. **Hello World**
