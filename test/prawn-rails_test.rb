@@ -1,8 +1,8 @@
 require 'test_helper'
-require "prawn-rails/prawn_rails_helper"
+require "prawn-rails/document_extension"
 
 class PrawnRailsTest < ActiveSupport::TestCase
-  include  PrawnRailsHelper
+  include  PrawnRails::DocumentExtension
   test "html_strip" do
     
     assert_nil(html_strip(nil)) 
